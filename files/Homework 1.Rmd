@@ -1,0 +1,99 @@
+---
+title: "Homework 1"
+author: "Atakan Demirkan"
+date: "4 Nisan 2021"
+output: html_document
+---
+# Part 1
+
+```{r, message=FALSE,warning=FALSE}
+library("readxl")
+library("zoo")
+```
+
+```{r}
+basepath<-"C:\\Users\\aadem\\OneDrive\\Desktop\\"
+```
+
+
+## CPI Data of Turkey
+### Obtaining Data
+
+Firstly, I obtaining data from Electronic Data Delivery System of TCMB to my computer. I read the data via read.table function.
+
+```{r}
+CPI <- read_excel(path=paste(basepath,"CPI.xlsx",sep="")) 
+```
+
+### Preparing Data
+
+```{r}
+CPI<-transform(CPI,CPI=as.numeric(CPI),Date=as.yearmon(Date))
+```
+
+
+### Plotting
+
+Secondly, I made a line chart of CPI Data with plot function.
+
+```{r}
+plot(CPI,type = "o", col = "red", xlab = "Date", ylab = "CPI",
+   main = "TURKEY CPI")
+```
+
+### Analysis
+  In CPI, there is a very clear increasing trend.
+
+## USDTRY Data
+
+### Obtaining Data
+
+```{r}
+USDTRY <- read_excel(path=paste(basepath,"USDTRY.xlsx",sep="")) 
+                      
+```
+### Preparing Data
+
+```{r}
+USDTRY<-transform(USDTRY,USDTRY=as.numeric(USDTRY),Date=as.yearmon(Date))
+```
+
+### Plotting
+
+Secondly, I made a line chart of CPI Data with plot function.
+
+```{r}
+plot(USDTRY,type = "o", col = "blue", xlab = "Date", ylab = "USDTRY",
+   main = "USDTRY")
+```
+
+### Analysis
+
+## XAUTRY Data
+
+### Obtaining Data
+
+```{r}
+XAUTRY <- read_excel(path=paste(basepath,"XAUTRY.xlsx",sep="")) 
+                      
+```
+### Preparing Data
+
+```{r}
+XAUTRY<-transform(XAUTRY,XAUTRY=as.numeric(XAUTRY),Date=as.yearmon(Date))
+```
+
+### Plotting
+
+Secondly, I made a line chart of CPI Data with plot function.
+
+```{r}
+plot(XAUTRY,type = "o", col = "green", xlab = "Date", ylab = "XAUTRY",
+   main = "XAUTRY")
+```
+```
+
+# Part 2
+## Turkish IPO Market and Reatil Investors
+
+
