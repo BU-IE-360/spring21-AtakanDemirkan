@@ -127,7 +127,7 @@ library("ggplot2")
 I defined the keyword that I research.
 
 ```{r,message=FALSE,warning=FALSE}
-keywords=c("Dolar")
+keywords=c("Dolar","Altın")
 ```
 
 I defined the country of observations.
@@ -161,6 +161,6 @@ plot
 
 ## Comments
 
-After analyzing the google trends volume of "dolar" word in Turkey, I found that there is no leading quality of citizens interest over USDTRY currency. However, extreme movements in currency cause some extreme interest in people and caught their attention. For instance, in the middle of 2018 currency shock, the sentiment went to extreme territory rapidly. It might be reasonable due to effect of USDTRY in CPI (explained before). Also, a considerable number of people invest in Us Dollar as a speculative purposes. Thus, extreme volatility caught their interest.    
+After analyzing the google trends volume of "dolar" word in Turkey, I found that there is no leading quality of citizens interest over USDTRY currency. However, extreme movements in currency cause some extreme interest in people and caught their attention. For instance, in the middle of 2018 currency shock, the sentiment went to extreme territory rapidly. It might be reasonable due to effect of USDTRY in CPI (explained before). Also, a considerable number of people invest in Us Dollar as a speculative purposes. Thus, extreme volatility caught their interest.Moreover, if we ignore the unusual observations, there is a clear level difference between the first and second half of sample. It can be explained by the increasing volatility in USDTRY.
 
-Moreover, if we ignore the unusual observations, there is a clear level difference between the first and second half of sample. It can be explained by the increasing volatility in USDTRY.
+For the word "Altın", there is a similar pattern like USDTRY and XAUTRY similarity. But the level difference in 2010-2015 interval is interesting. It may be the result of social meaning such as gift of gold in Turkish society in addition to speculative characteristics. 
